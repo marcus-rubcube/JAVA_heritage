@@ -1,4 +1,4 @@
-public class tryManager {
+public class TryManager {
     public static void main(String[] args) {
         Manager m1 = new Manager();
         m1.setName("Marcus Ramos");

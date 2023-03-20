@@ -2,7 +2,7 @@ public class Manager extends Official {
     private int password;
 
     public double getBonus(){
-        return super.salary;
+        return super.getBonus() + super.getSalary();
     }
 
     public boolean authentication(int password){

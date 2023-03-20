@@ -1,7 +1,7 @@
 public class Official {
     private String name;
     private String cpf;
-    protected double salary; // protected - public for the children
+    private double salary; // protected - public for the children
 
     public double getBonus(){
         return 0.1 * this.salary;

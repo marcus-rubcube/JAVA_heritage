@@ -1,4 +1,4 @@
-public class tryOfficial {
+public class TryOfficial {
     public static void main(String[] args) {
         Official marcus = new Official();
         marcus.setName("Marcus Ramos");
