@@ -10,10 +10,14 @@ public class TryReference {
         Official v = new VideoEditor();
         v.setSalary(1000);
 
+        Official d = new Designer();
+        d.setSalary(2100);
+
         BonusControl control = new BonusControl();
         control.registra(m1);
         control.registra(f);
         control.registra(v);
+        control.registra(d);
 
         System.out.println(control.getSum());
 
