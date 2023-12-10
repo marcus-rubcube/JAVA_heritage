@@ -4,9 +4,6 @@ public class TryReference {
         m1.setName("Marcus");
         m1.setSalary(5000);
 
-        Official f = new Official();
-        f.setSalary(2000);
-
         Official v = new VideoEditor();
         v.setSalary(1000);
 
@@ -15,7 +12,6 @@ public class TryReference {
 
         BonusControl control = new BonusControl();
         control.registra(m1);
-        control.registra(f);
         control.registra(v);
         control.registra(d);
 

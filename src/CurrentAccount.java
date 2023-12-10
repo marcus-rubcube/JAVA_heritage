@@ -8,4 +8,8 @@ public class CurrentAccount extends Account {
         double valorASacar = valor + 0.2;
         return super.saca(valorASacar);
     }
+
+    public void deposita(double valor){
+        super.saldo += valor;
+    }
 }

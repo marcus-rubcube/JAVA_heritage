@@ -1,6 +1,6 @@
 public class TryOfficial {
     public static void main(String[] args) {
-        Official marcus = new Official();
+        Manager marcus = new Manager();
         marcus.setName("Marcus Ramos");
         marcus.setCpf("222.222.222-22");
         marcus.setSalary(2600.00);

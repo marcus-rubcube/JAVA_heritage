@@ -1,11 +1,9 @@
-public class Official {
+public abstract class Official {
     private String name;
     private String cpf;
     private double salary; // protected - public for the children
 
-    public double getBonus(){
-        return 0.1 * this.salary;
-    }
+    public abstract double getBonus();
 
     public String getName(){
         return this.name;
