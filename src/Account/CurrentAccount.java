@@ -1,6 +1,6 @@
 package Account;
 
-public class CurrentAccount extends Account {
+public class CurrentAccount extends Account implements Taxable {
     public CurrentAccount(int agencia, int numero){
         super(agencia,numero);
     }
@@ -13,5 +13,10 @@ public class CurrentAccount extends Account {
 
     public void deposita(double valor){
         super.saldo += valor;
+    }
+
+    @Override
+    public double getTaxValue() {
+        return super.saldo * 0.01;
     }
 }
