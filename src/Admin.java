@@ -1,11 +1,12 @@
-public class Manager extends Official implements Auth {
+public class Admin extends Official implements Auth {
     private int password;
-    public double getBonus(){
-        return super.getSalary();
+    @Override
+    public double getBonus() {
+        return 50;
     }
 
     @Override
-    public void setPassword(int password){
+    public void setPassword(int password) {
         this.password = password;
     }
 
