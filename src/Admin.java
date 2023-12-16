@@ -1,5 +1,11 @@
 public class Admin extends Official implements Auth {
     private int password;
+
+    private final AuthUtil util;
+
+    public Admin() {
+        this.util = new AuthUtil();
+    }
     @Override
     public double getBonus() {
         return 50;
@@ -7,11 +13,11 @@ public class Admin extends Official implements Auth {
 
     @Override
     public void setPassword(int password) {
-        this.password = password;
+        this.util.setPassword(password);
     }
 
     @Override
     public boolean authentication(int password) {
-        return this.password == password;
+        return this.util.authentication(password);
     }
 }
